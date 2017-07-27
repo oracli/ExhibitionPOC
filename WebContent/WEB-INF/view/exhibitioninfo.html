@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>展会微信应用POC页面-展会介绍</title>
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/weui.min.css" rel="stylesheet" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+	</head>
+
+	<body>
+
+		<form id="member">
+			<br />
+			<br />
+
+			<div class="weui-cells__title">展会介绍</div>
+			<br />
+			<div class="weui-cells weui-cells_form">
+				<div class="page__bd page__bd_spacing">
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<div class="placeholder">1. 环球资源展自2005年在香港开幕以来，经过十年的快速发展，已经成为亚洲领先的展览会之一，是数以万计的国际买家结识中国及其他亚洲地区的供应商，采购优质产品的理想平台。环球资源展的持续发展也验证了环球资源致力于推动香港展览业蓬勃发展及强化香港作为亚洲展览中心及首选旅游目的地的承诺。环球资源展率先开始基于产品的采购方式，将产品分门别类的排放于各个展区，不仅便于买家快速寻找其所需要的产品并进行比较，而且也为参展商提供便利，助他们更轻松的接触目标客户。</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<div class="page__bd page__bd_spacing">
+
+				<div class="button-sp-area">
+					<a href="javascript:history.back();" class="weui-btn weui-btn_plain-primary">按钮</a>
+				</div>
+		</form>
+		<script type="text/javascript">
+			function register() {
+				//这里还需要加上校验
+				var mname = document.getElementById('membername').value;
+				var mmobile = document.getElementById('membermobile').value;
+				var mbirthday = $('#datePicker').html();
+				var mgender = $('#genderPicker').html();
+				alert(mname + ';' + mmobile + ';' + mgender + ';' + mbirthday);
+			}
+		</script>
+	</body>
+
+</html>

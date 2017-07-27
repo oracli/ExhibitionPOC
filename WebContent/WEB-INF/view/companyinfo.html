@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>展会微信应用POC页面-公司介绍</title>
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/weui.min.css" rel="stylesheet" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+	</head>
+
+	<body>
+
+		<form id="member">
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<div class="weui-cells__title">公司介绍</div>
+			<br />
+			<div class="weui-cells weui-cells_form">
+				<div class="page__bd page__bd_spacing">
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<div class="placeholder">1. 公司概况:这里面可以包括注册时间,注册资本,公司性质,技术力量,规模,员工人数,员工素质等;</div>
+							<div class="placeholder">2. 公司发展状况:公司的发展速度,有何成绩,有何荣誉称号等;</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<div class="page__bd page__bd_spacing">
+
+				<div class="button-sp-area">
+					<a href="javascript:history.back();" class="weui-btn weui-btn_plain-default">返回</a>
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript">
+			function register() {
+				//这里还需要加上校验
+				var mname = document.getElementById('membername').value;
+				var mmobile = document.getElementById('membermobile').value;
+				var mbirthday = $('#datePicker').html();
+				var mgender = $('#genderPicker').html();
+				alert(mname + ';' + mmobile + ';' + mgender + ';' + mbirthday);
+			}
+		</script>
+	</body>
+
+</html>
